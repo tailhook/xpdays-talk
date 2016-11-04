@@ -84,7 +84,7 @@ Implementation
 ==============
 
 
-Started with Dev. Envs
+Started with Dev. Envs
 ======================
 
 
@@ -133,7 +133,7 @@ Instead of
     * —  Oh, that did work!
 
 
-Automating Dev. Envs
+Automating Dev. Envs
 ======================
 
 
@@ -181,6 +181,12 @@ Iterate
 
 * Add metrics
 
+Staging: Updates
+================
+
+1. Every commit
+2. Tag (stable)
+
 
 Idea → Staging
 ===============
@@ -188,12 +194,6 @@ Idea → Staging
 * Create a Repo
 * Write few configs
 
-
-Two Kinds of Staging
-====================
-
-* Every commit
-* Tag (stable)
 
 
 Idea → Production
@@ -241,14 +241,15 @@ Config
 Not There
 =========
 
+* Network
 * Databases
 * Replication
 * Backups
-* Specific servers
+* Choosing servers
 
 
-Solution: Passion
-=================
+Solution: Patience
+==================
 
 .. class:: dashlist
 
