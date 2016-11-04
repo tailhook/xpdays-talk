@@ -1,0 +1,8 @@
+.strike {
+    text-decoration: line-through;
+}
+ul.dashlist {
+    list-style-type: none;
+}
+.dashlist code {
+}
