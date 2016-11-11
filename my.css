@@ -6,3 +6,16 @@ ul.dashlist {
 }
 .dashlist code {
 }
+
+ul.pseudocloud {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul.pseudocloud > li {
+    margin: 12px;
+}
+

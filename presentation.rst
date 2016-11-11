@@ -1,6 +1,9 @@
 .. role:: kill
    :class: strike
 
+.. role:: kfrag
+   :class: strike fragment
+
 .. role:: frag
    :class: fragment
 
@@ -11,12 +14,15 @@ Delivery Pipeline
 Teasers
 =======
 
-(TODO: should be tag cloud, more things)
+.. class:: pseudocloud
 
-* Gitlab
-* Containers
-* :kill:`Docker`
-* Orchestration
+    * :frag:`Containers`
+    * :frag:`Gitlab`
+    * :kfrag:`Docker`
+    * :frag:`Clouds`
+    * :frag:`Orchestration`
+    * :frag:`Bare-Metal`
+    * :frag:`People!`
 
 
 Background
@@ -28,7 +34,7 @@ Early 2014
 
 * 3 Ops
 * 3 Dev. Teams
-* 5×5 services
+* 1x5 monolith
 * 2 Data Centers
 
 
@@ -36,10 +42,8 @@ Late 2016
 =========
 
 * 6 Ops
-* 5+7 Dev. Teams
-* 140 Repos
-* +8 services
-* 31 new-style
+* 12+7 Dev. Teams
+* +6 projects
 * 6 Data Centers
 * ~ 400 servers
 
@@ -74,10 +78,6 @@ Containers ≠ Docker
 
 6. Security
 ===========
-
-
-(TODO: Some Final slide for Background Section)
-===============================================
 
 
 Implementation
@@ -133,6 +133,15 @@ Instead of
     * —  Oh, that did work!
 
 
+More Features
+=============
+
+* Nice commands
+* Image rebuild
+* Multiple processes
+* Image cleanup
+
+
 Automating Dev. Envs
 ======================
 
@@ -140,12 +149,17 @@ Automating Dev. Envs
 ... that didn't work
 ====================
 
+* :frag:`1 project`
+* :frag:`already set up`
+* :frag:`needs learning`
+* :frag:`different hosts`
+
 
 ... until we automated deployment
 =================================
 
 
-Idea -> Staging
+Idea → Staging
 ===============
 
 
@@ -179,7 +193,11 @@ Out of the Box
 Iterate
 =======
 
+* Add tests
 * Add metrics
+* Add docs
+* Add services
+
 
 Staging: Updates
 ================
@@ -225,17 +243,19 @@ Challenges: Teaching
 .. class:: dashlist
 
     * :frag:`—  Why should I write config?`
-    * :frag:`—  It's so long (20-30 LoCs)`
+    * :frag:`—  It's so long` :frag:`(20-30 LoCs)`
     * :frag:`—  Where to copy?`
     * :frag:`—  We have docs? Wow!`
 
 
-Config
-======
+Configs
+=======
 
-* Environment
-* Command-line
-* Resource constraints
+* containers setup (vagga.yaml)
+* 4 × application config
+* 3 × container runtime (lithos)
+* 3 × deployment config
+* gitlab-ci.yaml
 
 
 Not There
@@ -246,6 +266,14 @@ Not There
 * Replication
 * Backups
 * Choosing servers
+
+
+Config
+======
+
+* Environment
+* Command-line
+* Resource constraints
 
 
 Solution: Patience
@@ -265,6 +293,14 @@ Security
 * Containers
 * Sandboxing at all layers
 * ``+`` Ops
+
+
+That's it
+=========
+
+* 31 services in 5 months
+* 12 Doc projects
+* 148 Gitlab Repos
 
 
 Plans
